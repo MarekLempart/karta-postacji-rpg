@@ -4,8 +4,687 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karta postaci do RPG</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" />
+
 </head>
+
 <body>
+    <header>
+        <h1>Karta Bohatera</h1>
+        <h2>imie - Nils Olav</h2>
+        <ul>
+            <li>Rasa:<span> człowiek</span></li>
+            <li>Wiek:<span> 23 lat</span></li>
+            <li>Pochodzenie:<span> Królestwa Północy - Skellige wyspa Spikeroog (klan Brokvar)</span></li>
+        </ul>
+        <img src="./images/nils-olav.jpg" alt="wojownik ze Skellige" width="204" height="204"/>
+        <ul>
+            <li>Punkty doświadczenia:<span> liczba punków</span><button type="button">dodaj punkty / MG</button></li>
+            <li>Liczba odbytych sesji:<span> ilość sesji / obecność</span><button type="button">dodaj / MG</button></li>
+        </ul>
+    </header>
     
+    <main>
+        <!--profesja-->
+        <section>
+            <h2>Profesja:</h2>
+            <p>Rzemieślnik<button type="button">wybór profesji</button></p>
+            <h2>Drzewko profesji:</h2>
+            <ul>
+                <li>Mistrz Kuźni <button type="button">&#9745</button> Obniżka: <span>kowalstwo</span>
+                <ul>
+                    <li>Szeroka oferta (R) <span>liczba punków</span> <button type=button>AWANS</button></li>
+                    <li>Terminator (C) <span>liczba punków</span> <button type=button>AWANS</button></li>
+                    <li>Zbrojmistrz (C) <span>liczba punków</span> <button type=button>AWANS</button></li>
+                </ul>
+                </li>
+                <li>Alchemik <button type="button">&#9745</button> Obniżka: <span>alchemia i zielarstwo</span>
+                <ul>
+                    <li>Apteka w pamięci (R) <span>liczba punków <button type=button>AWANS</button></span></li>
+                    <li>Podwójna dawka (R) <span>liczba punków <button type=button>AWANS</button></span></li>
+                    <li>Udoskonalenie (R) <span>liczba punków <button type=button>AWANS</button></span></li>
+                </ul>
+                </li>
+                <li>Złota Rączka <button type="button">&#9745</button> Obniżka: <span>rzemiosło</span>
+                <ul>
+                    <li>Usprawnienie (R) <span>liczba punków <button type=button>AWANS</button></span></li>
+                    <li>Srebrne Ostrze (C) <span>liczba punków <button type=button>AWANS</button></span></li>
+                    <li>Słaby punkt (C) <span>liczba punków <button type=button>AWANS</button></span></li>
+                </ul>
+                </li>
+            </ul>   
+        </section>
+             
+        <!--główne cechy-->
+        <section>
+            <h2>Cechy bohatera</h2>
+            <ul>
+                <li>CIAŁO (C): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
+                <li>GRACJA (G): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
+                <li>ROZUM (R): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
+                <li>EMOCJE (E): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
+                <li>FART (F): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
+            </ul>
+        </section>
+        
+        <!--bonusy bohatera związane z rasą i pochodzeniem-->
+        <section>
+            <h2>Bonusu związane z rasą i pochodzeniem bohatera:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa bonusu:</th>
+                        <th>Sposób działania:</th>
+                        <th>Poziom / Koszty PW</th>
+                        <th>bonus do testu</th>
+                        <th>rzut kostką</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pochodzenie ze Skellige</td>
+                        <td>Jak każdy wojownik ze Skelige masz trwarde pięści i umiesz się nimi posługować. Dostajesz stały bonus do testu "bójka"</td>
+                        <td>1 / 0</td>
+                        <td>+1</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Urodzony pływak</td>
+                        <td>Jak każdy z Twojego klanu, nauczyłeś się pływać już jako małe dziecko. Teraz doskonale pływasz, nurkujesz... dostajesz bonus do testów związanych tymi czynnościami</td>
+                        <td>1 / 3</td>
+                        <td>+3</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Stan rycerski</td>
+                        <td>Jesteś pasowanym rycerzem i masz osobisty herb. Jeśli Twój rozmówca ma świadomość o Twoim stanie rycerskim i nie gardzi wysoko urodzonymi, to masz bonus dla testów związanych z "przywództwo", "perswazja", "zaufanie". Masz bonus do Sławy.</td>
+                        <td>1 / 0</td>
+                        <td>+1</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Kupiec - szczęśliwa moneta</td>
+                        <td>Przedmiot, który, w Twojej ocenie, daje Ci szczęście. Czujesz silny związek emocjonalny z tą monetą.</td>
+                        <td>1 / 0</td>
+                        <td>+0</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>                    
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj nowy bonus</button></th>
+                    </tr>
+                </tfooter>
+            </table>
+        
+        </section>
+
+        <!--cechy podstawowe-->
+        <section>
+            <h2>Cechy podstawowe bohatera:</h2>
+            <!--tabela dla cechy podstawowych-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">CECHY PODSTAWOWE</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>punkty zdrowia (PZ)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>szybkość leczenia (L)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>punkty wytrzymałości (PW)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>punkty poczytalności (PP)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>punkty determinacji (PD)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>punkty magii (wigor)</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>udźwig</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>tempo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>Korony Redańskie / Oreny Temerskie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                    <tr>
+                        <td>kosztowności o wartości</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">utrata punktów / zasobów</button></td>
+                    </tr>
+                </tbody>                
+            </table>
+        </section>
+
+            <!--zdolności-->
+        <section>
+            <h2>Zdolności bohatera:</h2>
+            <!--tabela dla cechy ciało-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">CIAŁO (C)</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>krzepa</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>wytrzymałość</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>kowalstwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>budownictwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>bójka</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>szermierka</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>broń drzewcowa krótka</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>broń drzewcowa długa</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>broń bitewna</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>parowanie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">CIAŁO (C)</td>
+                        <td>wynik roll</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <!--tabela dla cechy gracja-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">GRACJA (G)</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>percepcja</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>refleks</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>sztuka przetrwania</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>włamanie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>zwinne ręce</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>akrobatyka</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>skradanie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>rzemiosło</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>walka nożem</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>łucznictwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">GRACJA (G)</td>
+                        <td>wynik roll</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <!--tabela dla cechy rozum-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">ROZUM (R)</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>zdolności poznawcze</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>dedukcja</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>rozszyfrowanie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>wykształcenie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>wiedza o bestiach</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>alchemia i zielarstwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>medycyna i pierwsza pomoc</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>wyczuwanie magii</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>magia prosta</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>magia wyższa</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">ROZUM (R)</td>
+                        <td>wynik roll</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <!--tabela dla cechy emocje-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">EMOCJE (E)</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>przywództwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>perswazja</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>zaufanie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>amory</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>nieugiętość</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>empatia</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>odwaga</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>hazard i oszustwo</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>urok i styl</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>sztuka i występy</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">EMOCJE (E)</td>
+                        <td>wynik roll</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <!--tabela dla cechy fart-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">EMOCJE (E)</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>szczęście w bitwie</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>szczęście rzemieślnika</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>szczęście łotrzyka</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>szczęście przywódcy</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>szczęście ogólne</td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>                                     
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td colspan="2">FART (F)</td>
+                        <td>wynik roll</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <!--tabela dla zdolności charakterystycznej-->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Zdolność Charakterystyczna</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa:</th>
+                        <th>liczba punków</th>
+                        <th>AWANS</th>
+                        <th>ROLL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prowizorka<span> Cecha (Rozum + Gracja)/2</span></td>
+                        <td>x</td>
+                        <td><button type="button">AWANS</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>                   
+                </tbody>                
+            </table>
+        </section>
+
+        <!--talenty i ich rozwinięcia-->
+        <section>
+            <h2>Posiadane przez bohatera talenty wraz z rozwinięciami:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa talentu/rozwinięcia:</th>
+                        <th>Sposób działania:</th>
+                        <th>Poziom / Koszty PW</th>
+                        <th>bonus / kary do testu</th>
+                        <th>rzut kostką</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Używanie ciężkich zbroi</td>
+                        <td>Możesz używać cięższych pancerzy. Średnia zbroja - brak kary, ciężka zbroja - kara -5 do testów opartych na gracji i związanych z rzucaniem czarów.</td>
+                        <td>2 / 0</td>
+                        <td>+0 / -5</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj nowy bonus</button></th>
+                    </tr>
+                </tfooter>                
+            </table>
+        </section>
+
+        <!--czary-->
+        <section>
+            <h2>Poznane czary i rytualły przez bohatera:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa czaru:</th>
+                        <th>Sposób działania:</th>
+                        <th>Poziom / Koszty PW</th>
+                        <th>supces powyżej: podstawowy / wzmocniony</th>
+                        <th>rzut kostką</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aard - zaklęcie telekinetyczne</td>
+                        <td>Sukces 6 i więcej na 1K10 + test na prostą magię Znak tworzy telekinetyczną falę mocy (stożek o promieniu i cięciwie 2 m
+                        / strefa o promieniu 4 m). Czar powoduje oszołomienie i przewrócenie przeciwników w zasięgu, które nie obronią się przed
+                        efektem działania czaru. Duże i ciężkie istoty posiadają bonus do odporności na czar.</td>
+                        <td>1 / (2) 2-7</td>
+                        <td>14 / 19</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj nowy czar / rytuał</button></th>
+                    </tr>
+                </tfooter>
+            </table>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
