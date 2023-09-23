@@ -101,7 +101,8 @@
                     <tr>
                         <th>Nazwa bonusu:</th>
                         <th>Sposób działania:</th>
-                        <th>Poziom / Koszty PW</th>
+                        <th>Poziom</th>
+                        <th>Koszty PW</th>
                         <th>bonus do testu</th>
                         <th>rzut kostką</th>
                     </tr>
@@ -110,28 +111,32 @@
                     <tr>
                         <td>Pochodzenie ze Skellige</td>
                         <td>Jak każdy wojownik ze Skelige masz trwarde pięści i umiesz się nimi posługować. Dostajesz stały bonus do testu "bójka"</td>
-                        <td>1 / 0</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td>+1</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>
                     <tr>
                         <td>Urodzony pływak</td>
                         <td>Jak każdy z Twojego klanu, nauczyłeś się pływać już jako małe dziecko. Teraz doskonale pływasz, nurkujesz... dostajesz bonus do testów związanych tymi czynnościami</td>
-                        <td>1 / 3</td>
+                        <td>1</td>
+                        <td>3</td>
                         <td>+3</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>
                     <tr>
                         <td>Stan rycerski</td>
                         <td>Jesteś pasowanym rycerzem i masz osobisty herb. Jeśli Twój rozmówca ma świadomość o Twoim stanie rycerskim i nie gardzi wysoko urodzonymi, to masz bonus dla testów związanych z "przywództwo", "perswazja", "zaufanie". Masz bonus do Sławy.</td>
-                        <td>1 / 0</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td>+1</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>
                     <tr>
                         <td>Kupiec - szczęśliwa moneta</td>
                         <td>Przedmiot, który, w Twojej ocenie, daje Ci szczęście. Czujesz silny związek emocjonalny z tą monetą.</td>
-                        <td>1 / 0</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td>+0</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>                    
@@ -631,6 +636,7 @@
                     </tr>
                     <tr>
                         <th>nazwa:</th>
+                        <th>test cech:</th>
                         <th>liczba punków</th>
                         <th>AWANS</th>
                         <th>ROLL</th>
@@ -638,7 +644,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Prowizorka<span> Cecha (Rozum + Gracja)/2</span></td>
+                        <td>Prowizorka</td>
+                        <td>Cecha (Rozum + Gracja)/2</td>
                         <td>x</td>
                         <td><button type="button">AWANS</button></td>
                         <td><button type="button">roll the dice</button></td>
@@ -655,7 +662,8 @@
                     <tr>
                         <th>Nazwa talentu/rozwinięcia:</th>
                         <th>Sposób działania:</th>
-                        <th>Poziom / Koszty PW</th>
+                        <th>Poziom</th>
+                        <th>Koszty PW</th>
                         <th>bonus / kary do testu</th>
                         <th>rzut kostką</th>
                     </tr>
@@ -664,7 +672,8 @@
                     <tr>
                         <td>Używanie ciężkich zbroi</td>
                         <td>Możesz używać cięższych pancerzy. Średnia zbroja - brak kary, ciężka zbroja - kara -5 do testów opartych na gracji i związanych z rzucaniem czarów.</td>
-                        <td>2 / 0</td>
+                        <td>2</td>
+                        <td>0</td>
                         <td>+0 / -5</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>
@@ -685,8 +694,12 @@
                     <tr>
                         <th>Nazwa czaru:</th>
                         <th>Sposób działania:</th>
-                        <th>Poziom / Koszty PW</th>
-                        <th>supces powyżej: podstawowy / wzmocniony</th>
+                        <th>Poziom</th>
+                        <th>Koszty rzucenia PW</th>
+                        <th>Maksymalne koszty rzucenia PW</th>
+                        <th>Koszty podtrzymania PW</th>
+                        <th>Poziom trudności PT: poziom podstawowy</th>
+                        <th>Poziom trudności PT: poziom wzmocniony</th>
                         <th>rzut kostką</th>
                     </tr>
                 </thead>
@@ -696,8 +709,12 @@
                         <td>Sukces 6 i więcej na 1K10 + test na prostą magię Znak tworzy telekinetyczną falę mocy (stożek o promieniu i cięciwie 2 m
                         / strefa o promieniu 4 m). Czar powoduje oszołomienie i przewrócenie przeciwników w zasięgu, które nie obronią się przed
                         efektem działania czaru. Duże i ciężkie istoty posiadają bonus do odporności na czar.</td>
-                        <td>1 / (2) 2-7</td>
-                        <td>14 / 19</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>15</td>
+                        <td>20</td>
                         <td><button type="button">roll the dice</button></td>
                     </tr>
                 </tbody>
@@ -710,7 +727,108 @@
         </section>
 
         <section>
-            <h2>Pznane schematy</h2>
+            <h2>Poznane schematy rzemieślnicze</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu / półproduktu:</th>
+                        <th>Składniki:</th>
+                        <th>Poziom schemtu</th>
+                        <th>Czas wykonania</th>
+                        <th>Poziom trudności PT</th>
+                        <th>rzut kostką</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wzmocnione drewno</td>
+                        <td>Drewno (x1), żywica (x3)</td>
+                        <td>uczeń</td>
+                        <td>1/2 h</td>
+                        <td>12</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Wyprawiona skóra</td>
+                        <td>Skóra (x1), zioła do garbowania (x3)</td>
+                        <td>uczeń</td>
+                        <td>1 h</td>
+                        <td>12</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Wzmocniona skóra</td>
+                        <td>Drewno (x2), wosk (x2), wyprawiona skóra (x1), żywica (x4)</td>
+                        <td>uczeń</td>
+                        <td>1/2 h</td>
+                        <td>12</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Schemat broni - siekiera</td>
+                        <td>Stal (x1), wyprawiona skóra (x1), wzmocniona skóra (x1), wzmocnione drewno (x1), żywica (x4)</td>
+                        <td>uczeń</td>
+                        <td>3 h</td>
+                        <td>10</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Schemat broni - włócznia</td>
+                        <td>Dratwa (x4), drewno (x5), stal (x2), wyprawiona skóra (x3), żywica (x2)</td>
+                        <td>uczeń</td>
+                        <td>6 h</td>
+                        <td>12</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                    <tr>
+                        <td>Schemat ćwiekowana skóra</td>
+                        <td>Dratwa (x1), wyprawiona skóra (x1), żelazo (x1)</td>
+                        <td>uczeń</td>
+                        <td>3 h</td>
+                        <td>14</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj schemat rzemieśliczy</button></th>
+                    </tr>
+                </tfooter>
+            </table>
+        </section>
+
+        <section>
+            <h2>Posiadane przedmioty przez bohatera</h2>
+            <h3>Wyposażenie podstawowe (ubranie, zbroja, broń, itp.):</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu:</th>
+                        <th>Rodzaj przedmiotu</th>
+                        <th>Charakterystyka przedmiotu:</th>
+                        <th>Waga przedmiotu:</th>
+                        <th>Wartość przedmiotu:</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfooter>
+
+                </tfooter>
+            </table>
+
+
+            <h3>Wyposażenie dodatkowe (ukryta broń, biżuteria, amulety itp.):</h3>
+
+
+            <h3>Dodatkowe przedmioty:</h3>
+
+
+            <h3>Składniki alchemiczne, rzemieślnicze, jedzenie, itp.:</h3>
+
+
         </section>
 
     </main>
