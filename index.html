@@ -21,31 +21,23 @@
             <li>Wiek:<span> 23 lat</span></li>
             <li>Pochodzenie:<span> Królestwa Północy - Skellige wyspa Spikeroog (klan Brokvar)</span></li>
         </ul>
-        <img src="./images/nils-olav.jpg" alt="wojownik ze Skellige" width="204" height="204"/>
+        <img src="./images/nils-olav.jpg" alt="wojownik ze Skellige" width="400" height="400"/>
         <ul>
             <li>Punkty doświadczenia:<span> liczba punków</span><button type="button">dodaj punkty / MG</button></li>
             <li>Liczba odbytych sesji:<span> ilość sesji / obecność</span><button type="button">dodaj / MG</button></li>
         </ul>
         <nav>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#profesja">Profesja:</a></li>
+                <li><a href="#cechy-bohatera">Cechy bohatera:</a></li>
+                <li><a href="#bonus-rasa-pochodzenie">Bonusu związane z rasą i pochodzeniem bohatera:</a></li>
+                <li><a href="#cechy-podstawowe">Cechy podstawowe bohatera:</a></li>
+                <li><a href="#zdolnosci">Zdolności bohatera:</a></li>
+                <li><a href="#talenty">Posiadane przez bohatera talenty wraz z rozwinięciami:</a></li>
+                <li><a href="#czary">Poznane czary i rytuały przez bohatera:</a></li>
+                <li><a href="#schematy-rzemieslnicze">Poznane schematy rzemieślnicze:</a></li>
+                <li><a href="#przemioty">Posiadane przedmioty przez bohatera:</a></li>
+                <li><a href="#historia">Twoje dzieje</a></li>                
             </ul>
         </nav>
     </header>
@@ -53,7 +45,7 @@
     <main>
         <!--profesja-->
         <section>
-            <h2>Profesja:</h2>
+            <h2 id="profesja">Profesja:</h2>
             <p>Rzemieślnik<button type="button">wybór profesji</button></p>
             <h2>Drzewko profesji:</h2>
             <ul>
@@ -83,7 +75,7 @@
              
         <!--główne cechy-->
         <section>
-            <h2>Cechy bohatera</h2>
+            <h2 id="cechy-bohatera">Cechy bohatera:</h2>
             <ul>
                 <li>CIAŁO (C): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
                 <li>GRACJA (G): <span>liczba punków</span> <button type="button">AWANS</button> <button type="button">roll the dice</button></li>
@@ -95,7 +87,7 @@
         
         <!--bonusy bohatera związane z rasą i pochodzeniem-->
         <section>
-            <h2>Bonusu związane z rasą i pochodzeniem bohatera:</h2>
+            <h2 id="bonus-rasa-pochodzenie">Bonusu związane z rasą i pochodzeniem bohatera:</h2>
             <table>
                 <thead>
                     <tr>
@@ -152,7 +144,7 @@
 
         <!--cechy podstawowe-->
         <section>
-            <h2>Cechy podstawowe bohatera:</h2>
+            <h2 id="cechy-podstawowe">Cechy podstawowe bohatera:</h2>
             <!--tabela dla cechy podstawowych-->
             <table>
                 <thead>
@@ -233,7 +225,7 @@
 
             <!--zdolności-->
         <section>
-            <h2>Zdolności bohatera:</h2>
+            <h2 id="zdolnosci">Zdolności bohatera:</h2>
 
             <!--nie wiem czy cechy ciało, gracja, rozum, emocje oraz fart otoczyć "ul" ???????????????
             cechy ciało, gracja, rozum i emocje posiadają po 10 elementów a fart jedynie 5 elementów-->
@@ -578,7 +570,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="4">EMOCJE (E)</th>
+                        <th colspan="4">FART (F)</th>
                     </tr>
                     <tr>
                         <th>nazwa:</th>
@@ -632,7 +624,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="4">Zdolność Charakterystyczna</th>
+                        <th colspan="4">Zdolność profesji:</th>
                     </tr>
                     <tr>
                         <th>nazwa:</th>
@@ -656,7 +648,7 @@
 
         <!--talenty i ich rozwinięcia-->
         <section>
-            <h2>Posiadane przez bohatera talenty wraz z rozwinięciami:</h2>
+            <h2 id="talenty">Posiadane przez bohatera talenty wraz z rozwinięciami:</h2>
             <table>
                 <thead>
                     <tr>
@@ -688,7 +680,7 @@
 
         <!--czary-->
         <section>
-            <h2>Poznane czary i rytualły przez bohatera:</h2>
+            <h2 id="czary">Poznane czary i rytuały przez bohatera:</h2>
             <table>
                 <thead>
                     <tr>
@@ -727,7 +719,7 @@
         </section>
 
         <section>
-            <h2>Poznane schematy rzemieślnicze</h2>
+            <h2 id="schematy-rzemieslnicze">Poznane schematy rzemieślnicze:</h2>
             <table>
                 <thead>
                     <tr>
@@ -798,40 +790,334 @@
         </section>
 
         <section>
-            <h2>Posiadane przedmioty przez bohatera</h2>
-            <h3>Wyposażenie podstawowe (ubranie, zbroja, broń, itp.):</h3>
+            <h2 id="przemioty">Posiadane przedmioty przez bohatera:</h2>
+            <h3>Broń:</h3>
             <table>
                 <thead>
                     <tr>
                         <th>Nazwa przedmiotu:</th>
-                        <th>Rodzaj przedmiotu</th>
-                        <th>Charakterystyka przedmiotu:</th>
-                        <th>Waga przedmiotu:</th>
-                        <th>Wartość przedmiotu:</th>
+                        <th>Typ:</th>
+                        <th>Bonus do celności:</th>
+                        <th>Dostępność:</th>
+                        <th>Obrażenia:</th>
+                        <th>Trwałość:</th>
+                        <th>Ręczność broni:</th>
+                        <th>Zasięg</th>
+                        <th>Efekty:</th>
+                        <th>Dyskrecja:</th>
+                        <th>Wzmocnienia:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                        <th>Wyciągnięcie broni:</th>
+                        <th>rzut na atak</th>
+                        <th>parowanie</th>
                     </tr>
-
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Siekiera klanowa (możliwość udoskonalania)</td>
+                        <td>cięte</td>
+                        <td>+0</td>
+                        <td>Unikat</td>
+                        <td>2K6+5</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>brak</td>
+                        <td>silny atak: x2,5</td>
+                        <td>mała</td>
+                        <td>3</td>
+                        <td>1,5</td>
+                        <td>bezcenna</td>
+                        <td><button type="button">&#9745</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
 
+                    <tr>
+                        <td>Sztyle</td>
+                        <td>cięte/kłute</td>
+                        <td>+2</td>
+                        <td>powszechny</td>
+                        <td>1K6</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>CIAŁO x 4m</td>
+                        <td>brak</td>
+                        <td>wysoka</td>
+                        <td>0</td>
+                        <td>0,5</td>
+                        <td>250</td>
+                        <td><button type="button">&#9745</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
                 </tbody>
                 <tfooter>
-
+                    <tr>
+                        <th colspan="16"><button type="button">dodaj nową broń</button></th>
+                    </tr>
                 </tfooter>
             </table>
 
 
-            <h3>Wyposażenie dodatkowe (ukryta broń, biżuteria, amulety itp.):</h3>
+            <h3>Pancerz:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu:</th>
+                        <th>Wyparowanie:</th>
+                        <th>Dostępność:</th>
+                        <th>Wzmocnienia:</th>
+                        <th>Efekty:</th>
+                        <th>Niewygoda:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                        <th>parowanie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kolczuga</td>
+                        <td>14</td>
+                        <td>rzadki</td>
+                        <td>1</td>
+                        <td>brak</td>
+                        <td>1</td>
+                        <td>8,5</td>
+                        <td>380</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Hełm okularowy</td>
+                        <td>8</td>
+                        <td>rzadki</td>
+                        <td>0</td>
+                        <td>brak</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>200</td>
+                        <td><button type="button">roll the dice</button></td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <th colspan="9"><button type="button">dodaj nowy pancerz</button></th>
+                    </tr>
+                </tfooter>
+            </table>
 
+            <h3>Transport:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa:</th>
+                        <th>Atletyka:</th>
+                        <th>Modyfikator kontroli:</th>
+                        <th>TEMPO:</th>
+                        <th>Punkty zdrowia:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Koń</td>
+                        <td>15</td>
+                        <td>+2</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>100</td>
+                        <td>520</td>
+                    </tr>
+                    <tr>
+                        <td>Furmanka</td>
+                        <td>NIE</td>
+                        <td>-1</td>
+                        <td>tempo zwierzęcia -3</td>
+                        <td>30</td>
+                        <td>300</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+
+                <tfooter>
+                    <tr>
+                        <th colspan="7"><button type="button">dodaj nowy środek transportu</button></th>
+                    </tr>
+                </tfooter>
+            </table>
+
+            <h3>Wyposażenie dodatkowe (biżuteria, amulety itp.):</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu:</th>
+                        <th>Opis, rodzaj i sposób działania:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Osobisty herb</td>
+                        <td>Herb świadczący o Twoim stanie rycerskim. Gdy założony + 1 do Sławy</td>
+                        <td>0,1</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Szczęśliwa moneta</td>
+                        <td>Moneta otrzymana od Twojego przyjaciela, poznanego Kupca. Czujesz silny związek emocjonalny z tą monetą.</td>
+                        <td>0,1</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+
+                <tfooter>
+                    <tr>
+                        <th colspan="4"><button type="button">dodaj nowy przedmiot</button></th>
+                    </tr>
+                </tfooter>
+            </table>
 
             <h3>Dodatkowe przedmioty:</h3>
-
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu:</th>
+                        <th>Ilość:</th>
+                        <th>Opis, rodzaj i sposób działania:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>Zestaw podróżny</td>
+                        <td>1</td>
+                        <td>Wszystko niezbędne do podróży: śpiwór, pled, krzesiwo i narzędzia do rozpałki, menażka, łyżka, nóż/kozik, itp.</td>
+                        <td>5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Zestaw medyczny</td>
+                        <td>3</td>
+                        <td>Zestaw do lecenie i stabilizacji ran lekkich i średnich: bandaże, sterylne nici i igły do szycia ran, środek odkażający
+                        i przeciwbólowy.</td>
+                        <td>0,5</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Mody stój</td>
+                        <td>1</td>
+                        <td>Eleganckie ubranie mieszczańskie/szlacheckie</td>
+                        <td>2</td>
+                        <td>70</td>
+                    </tr>
+                </tbody>
+            
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj nowy przedmiot</button></th>
+                    </tr>
+                </tfooter>
+            </table>
 
             <h3>Składniki alchemiczne, rzemieślnicze, jedzenie, itp.:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa przedmiotu:</th>
+                        <th>Ilość:</th>
+                        <th>Opis, rodzaj i sposób działania:</th>
+                        <th>Waga:</th>
+                        <th>Cena:</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>Spirytus mahakamski</td>
+                        <td>1</td>
+                        <td>Mocny alkohol</td>
+                        <td>1</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Wyprawiona skóra</td>
+                        <td>5</td>
+                        <td>składnik rzemieślniczy</td>
+                        <td>1</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Wzmocniona skóra</td>
+                        <td>3</td>
+                        <td>składnik rzemieślniczy</td>
+                        <td>1,5</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>Wyśmienitej jakości wzmocniona skóra</td>
+                        <td>1</td>
+                        <td>składnik rzemieślniczy</td>
+                        <td>2,5</td>
+                        <td>96</td>
+                    </tr>
+                    <tr>
+                        <td>Wzmocnione drewno</td>
+                        <td>5</td>
+                        <td>składnik rzemieślniczy</td>
+                        <td>1,5</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            
+                <tfooter>
+                    <tr>
+                        <th colspan="5"><button type="button">dodaj nowy przedmiot</button></th>
+                    </tr>
+                </tfooter>
+            </table>
+        </section>
 
-
+        <section>
+            <!--szablon historii bohatera do przerobienia w formie opowiadania-->
+            <h2 id="historia">Twoje dzieje</h2>
+            <article>
+                <h3>Rodzina:</h3>
+                <p>Pewnego dnia straciłeś wszystko. Bandyci napadli na Twoich bliskich, rozkradli majątek i zamordowali krewnych.</p>
+                <h3>Rodzice:</h3>
+                <p>Twój ojciec został niesłusznie oskarżony i stracony. Pewnie trafił w niewłaściwe miejsce o niewłaściwym czasie.
+                Natomiast Twoja matka została porwana przez jakiegoś szlachcica. Wpadła w oko lokalnemu władyce lub jego potomkowi.</p>
+                <h3>Stan rodziny:</h3>
+                <p><b>Rycerstwo.</b> Nauki pana ojca uczyniły z Ciebie prawdziwego szlachcica. Przez wieki Twoje dziady dały przykład tych nauk, a
+                teraz czas na Ciebie. <b>Ekwipunek:</b> Osobisty herb (+1 do Sławy).</p>
+                <h3>Najlepszy przyjaciel:</h3>
+                <p><b>Kupiec.</b> Na swojej drodze spotkałeś kupca, który uczył Ciebie o sprycie
+                i przebiegłości.<b>Ekwipunek:</b> Szczęśliwa moneta.</p>
+                <h3>Rodzeństwo:</h3>
+                <p>Urodziłeś się w wieloletniej rodzinie. Miałeś ośmiorga rodzeństwa.</p>
+                <h3>Życie:</h3>
+                <p>W wieku 0-10 lat: Spotkałeś sojusznika - mężczyznę, który był bardem. Uratowałeś go przed czymś. Jest przyjacielem. Z
+                Królestw Północy.</p>
+                <p>W wieku 11-15 lat: Spotkało Cię nieszczęście: Oskarżono Cię o przestępstwo lub zbrodnie, których nie popełniłeś - gwałt.</p>
+                <p>W wieku 16-20 lat: Spotkałeś sojusznika - kobietę. Jest ona bardem i spotkałeś ją w tawernie. Bliski przyjaciel. Z
+                Królestw Północy.</p>
+                <p>W wieku 21- lat: Spotkałeś osobę, która stała się Twoim wrogiem - kobieta, będąca Twoim krewnym. Przyczyną waszej waśni
+                była rzucona klątwa przez Ciebie lub z Twojej winy. Ma potęgę 9. Jedno poluje na drugie. Ma popleczników.</p>
+            </article>
         </section>
 
     </main>
+
+    <!--ta część będzie jeszcze rozbudowana-->
+    <footer>
+        <img src="./images/wiedzminski-medalion-wilka.jpg" alt="wiedźmiński medalion szkoły wilka" width="150" height="150" />
+    </footer>
 
 </body>
 
